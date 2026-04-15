@@ -1,0 +1,49 @@
+# 机器人配置
+qqbot:
+  # 机器人基本信息
+  appid: ""
+  token: ""
+  secret: ""
+  type: ""  # public 或 private
+  sandbox: true  # 沙箱模式
+  name: ""  # 机器人英文名称（一个）
+  aliases: [""]  # 机器人通用名称（多个）
+  
+  # 事件订阅
+  intents:
+    - GUILDS
+    - GUILD_MEMBERS
+    - GUILD_MESSAGES
+    - GUILD_MESSAGE_REACTIONS
+    - DIRECT_MESSAGES
+    - OPEN_FORUMS_EVENT
+    - AUDIO_OR_LIVE_CHANNEL_MEMBER
+    - USER_MESSAGE
+    - INTERACTIONS
+    - MESSAGE_AUDIT
+    - FORUM_EVENT
+    - AUDIO_ACTION
+    - PUBLIC_GUILD_MESSAGES
+
+# 日志配置
+logger:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_path: "logs/"
+  file_name: "bot.log"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+# 命令配置
+commands:
+  prefix: "!"
+  help_command: "help"
+  admin_commands:
+    - "reload"
+    - "shutdown"
+
+# 其他配置
+other:
+  timeout: 30  # API调用超时时间（秒）
+  retry_times: 3  # API调用重试次数
+  cooldown: 5  # 命令冷却时间（秒）

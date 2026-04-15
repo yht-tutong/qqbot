@@ -9,7 +9,7 @@ logs/
 botpy.log
 
 # Config
-config/config.yaml
+# config/config.yaml
 
 # Virtual environment
 venv/
