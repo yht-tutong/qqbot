@@ -40,7 +40,7 @@ qqbot/
 1. 克隆项目到本地
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/yht-tutong/qqbot/master.git
 cd qqbot
 ```
 
